@@ -1,0 +1,240 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: rgb(0, 0, 0);
+}
+
+h2 {
+    color: white;
+}
+
+.navbar {
+    background-color: #000000;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .navbar-brand {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    margin-right: 20px;
+  }
+  
+  .navbar-brand p {
+    text-decoration: none;
+  }
+  
+  .navbar-nav {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .navbar-nav li {
+    margin-right: 20px;
+  }
+  
+  .navbar-nav a {
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  .navbar-nav a:hover {
+    color: #ccc;
+  }
+
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    background: url(hero_bg.webp) no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    border-radius: 1.5rem;
+    width: 190vh;
+    margin-left: 30px;
+}
+
+.hero::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    animation: fadeIn 5s ease-in-out;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin: 0;
+    animation: slideIn 1.5s ease-in-out;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin: 20px 0;
+    animation: slideIn 1.5s ease-in-out 0.5s;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #ff6600;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    animation: slideIn 1.5s ease-in-out 1s;
+}
+
+.cta-button:hover {
+    background-color: #e55a00;
+}
+
+.key-problems {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.key-problems .problems {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.key-problems .problem {
+    flex: 1;
+    margin: 10px;
+    max-width: 300px;
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.metric {
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 0.5rem;
+    text-align: center;
+    padding: 0.5rem;
+    background-color: #f4f4f4;
+}
+
+h2 {
+    font-size: 2rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.key-metrics {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.key-metrics .metrics {
+    display: flex;
+    justify-content: space-around;
+}
+
+.key-metrics .metric {
+    margin: 10px;
+    text-align: center;
+}
+
+.key-metrics .metric img {
+    width: 100px;
+    height: 100px;
+}
+
+#review-user {
+    color: black;
+}
+
+.reviews {
+    padding: 50px 20px;
+    background-color: #f8f8f8;
+    text-align: center;
+}
+
+.reviews-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.review {
+    flex: 1;
+    margin: 10px;
+    max-width: 300px;
+    padding: 20px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 10px;
+    color: white;
+}
+
+.problem-target {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.problem-target .features-tabs {
+    display: flex;
+    justify-content: center;
+}
+
+.problem-target .tab {
+    margin: 0 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: #ddd;
+    border-radius: 5px;
+}
+
+.problem-target .tab-content {
+    display: none;
+}
+
+.problem-target .tab-content.active {
+    display: block;
+}
+
+.cta {
+    padding: 50px 20px;
+    background-color: #ff6600;
+    color: white;
+    text-align: center;
+}
+
+.cta .cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: white;
+    color: #ff6600;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 50px;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 300;
+}
